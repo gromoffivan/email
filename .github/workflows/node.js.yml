@@ -1,9 +1,12 @@
+
 name: build_nodejs
 
 on:
   push:
+    branches:
+      - main #ветка для пуша
     tags:
-    - '*' 
+    - '*'
 
 jobs:
   build:
