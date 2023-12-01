@@ -1,4 +1,4 @@
-name: build_node_v16
+name: build_nodejs
 
 on:
   push:
