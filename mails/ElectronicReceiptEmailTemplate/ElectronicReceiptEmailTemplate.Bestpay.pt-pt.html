@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Prezado cliente**
+
+
+O anexo contém informações para receber uma transferência de dinheiro. Recebeu este e-mail porque
+o remetente da transferência de dinheiro indicou o seu endereço de E-mail.
+
+
+#### Esta carta não requer uma resposta.
+
+_Atenciosamente, BESTPAY s. r. o._
+
+<br>
+
+{% endblock %}

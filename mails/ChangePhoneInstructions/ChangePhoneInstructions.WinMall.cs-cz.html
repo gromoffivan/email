@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### Dobrý den! Chcete-li změnit telefonní číslo svého účtu, musíte provést následující kroky:
+
+
+1. Vyfoťte se, jak držíte pas s Portálem [TIME.IS](https://time.is/United_Kingdom) na pozadí. Informace o pasu by měly být jasně viditelné. Obrázek by měl být předán jako odpověď na aktuální dopis do 10 minut od okamžiku výstřelu. Důležité! Všechny pasové údaje by měly být jasně viditelné. Obrazovka pozadí by měla být také jasně viditelná.
+
+2. Připojte vaše předchozí a nová telefonní čísla na dopis pomocí formátu: +хх ххх ххх хххххх.
+
+3. Uveďte, jaká byla vaše poslední cílová země převodu (pokud existuje).
+
+_Děkuji. pozdrav_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Tento e-mail byl vygenerován automaticky na něj nemusíte reagovat")}}
+{% endblock %}

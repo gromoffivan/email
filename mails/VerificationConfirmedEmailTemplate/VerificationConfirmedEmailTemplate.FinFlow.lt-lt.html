@@ -1,0 +1,43 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Gerbiamas kliente**
+
+Dėkojame, kad pasirinkote registruotis pas mus!
+
+Prašome rasti pridedamas Bendrąsias sąlygas ir nuorodas <a href="https://bpay.cz/en-gb/privacy-policy?type=business">Privatumo Politika</a>, <a href="https://bpay.cz/en-gb/complaint-procedure?type=business">Complaints Policy</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">Kainoraštis</a> ir <a href="https://bpay.cz/en-gb/information-sheet?type=business">Informacinis lapas</a>
+iš BESTPA s. r. O., kad turėtumėte savo galiojančių dokumentų kopiją.
+    
+    
+Norėdami visiškai patvirtinti savo sąskaitą, atlikite patvirtinimą ir pateikite asmens dokumentą.
+Tai gali būti asmens dokumentas arba pasas, priklausomai nuo jūsų, kaip mūsų kliento, įvertinimo.
+Be to, būkite pasirengę, kad proceso metu jums reikės pasidaryti asmenukę.
+    
+    
+Pirmasis mokėjimas už jūsų perlaidą turi būti atliktas ir patvirtintas iš jūsų banko sąskaitos, esančios ES banke, kad būtų galima patikrinti jo egzistavimą.
+    
+Kai visi būtini veiksmai bus atlikti, jūsų paskyra, kaip manome, turėtų būti sėkmingai patikrinta ir galėsite pradėti ja naudotis.
+    
+    
+_Geriausi linkėjimai FinFlow._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Šis laiškas buvo sugeneruotas automatiškai į jį atsakyti nereikia")}}
+{% endblock %}

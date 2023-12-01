@@ -1,0 +1,32 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **尊敬的客户**
+
+你的核证代码是 <code>{code}</code>
+
+_真诚的你 FinFlow._
+
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("这封电子邮件是自动生成的，没有必要回复它")}}
+{% endblock %}
+
+
+

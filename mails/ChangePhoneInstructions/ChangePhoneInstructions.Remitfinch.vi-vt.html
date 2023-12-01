@@ -1,0 +1,33 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### Chúc một ngày tốt lành! Để thay đổi số điện thoại tài khoản của bạn, bạn phải hoàn thành các bước sau:
+
+
+1. Chụp ảnh bạn đang cầm hộ chiếu với cổng thông tin [TIME.IS](https://time.is/United_Kingdom) trên nền. Thông tin hộ chiếu nên được nhìn thấy rõ ràng. Hình ảnh phải được chuyển tiếp dưới dạng phản hồi cho một bức thư hiện tại trong vòng 10 phút kể từ thời điểm chụp. QUAN trọng! Tất cả các thông tin hộ chiếu nên được nhìn thấy rõ ràng. Màn hình nền cũng phải được hiển thị rõ ràng.
+
+2. Đính kèm các số điện thoại trước đó và mới của bạn vào chữ cái bằng định dạng: +хх ххх ххх хххххх.
+
+3. Chỉ định quốc gia chuyển nhượng cuối cùng của bạn là gì (nếu có).
+
+_Cảm ơn bạn. Trân Trọng_
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Email này được tạo tự động không cần phải trả lời nó")}}
+{% endblock %}

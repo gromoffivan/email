@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### ¡Buen día! Para cambiar el número de teléfono de su cuenta, deberá completar los siguientes pasos:
+
+
+1. Tómate una foto sosteniendo el pasaporte con el portal [TIME.IS] (https://time.is/United_Kingdom) sobre un fondo. La información del pasaporte debe ser claramente visible. La imagen debe enviarse como respuesta a una carta actual dentro de los 10 minutos posteriores al momento de la toma. ¡IMPORTANTE! Todas las credenciales de pasaporte deben ser claramente visibles. La pantalla de fondo también debe ser visible claramente.
+
+2. Adjunte sus números de teléfono anteriores y nuevos a la carta con el formato: + хх ххх ххх хххххх.
+
+3. Especifique cuál fue su último país de destino de transferencia(si corresponde).
+
+_Gracias. Atentamente_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Este correo electrónico se generó automáticamente no es necesario responderlo")}}
+{% endblock %}

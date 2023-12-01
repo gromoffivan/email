@@ -1,0 +1,30 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Kính gửi khách hàng**
+
+Mã xác minh của bạn là <code >{code}</code>
+
+_Trân trọng của bạn FinFlow._
+
+<br>
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Email này được tạo tự động không cần phải trả lời nó")}}
+{% endblock %}
+
+
+

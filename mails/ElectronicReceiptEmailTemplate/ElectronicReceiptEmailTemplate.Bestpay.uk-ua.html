@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Шановний клієнт**
+
+
+У вкладенні міститься інформація для отримання грошового переказу. Ви отримали цей електронний лист, тому
+що відправник грошового переказу вказав Вашу адресу електронної пошти.
+
+
+#### Цей лист не вимагає відповіді.
+
+_Щиро ваш, BESTPAY s. r. o._
+
+<br>
+
+{% endblock %}

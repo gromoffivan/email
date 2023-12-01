@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### İyi günler! Hesap telefon numaranızı değiştirmek için aşağıdaki adımları tamamlamanız gerekir:
+
+
+1. Pasaportunuzu portalda tuttuğunuz bir fotoğrafınızı çekin [TIME.IS ](https://time.is/United_Kingdom ) bir arka plan üzerinde. Pasaport bilgileri açıkça görülmelidir. Resim, çekim anından itibaren 10 dakika içinde geçerli bir mektuba yanıt olarak iletilmelidir. ÖNEMLİ! Tüm pasaport kimlik bilgileri açıkça görülmelidir. Arka plan ekranı da açıkça görülebilmelidir.
+
+2. Önceki ve yeni telefon numaralarınızı şu biçimi kullanarak mektuba ekleyin: +хх ххх ххх хххххх.
+
+3. En son transfer ettiğiniz varış ülkesinin ne olduğunu belirtin (varsa).
+
+_Teşekkür ederim. Saygılarımızla_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Bu e-postanın otomatik olarak yanıtlanması gerekmediği oluşturuldu")}}
+{% endblock %}

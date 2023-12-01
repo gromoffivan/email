@@ -1,0 +1,28 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Hurmatli mijoz**
+
+Sizning tasdiqlash kodingiz <code>{code}</code>
+
+_Hurmat bilan sizning WinMall._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Ushbu elektron pochta avtomatik ravishda yaratilgan unga javob berishning hojati yo'q")}}
+{% endblock %}

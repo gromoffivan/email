@@ -1,0 +1,31 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Gerbiamas kliente**
+
+Jūsų patvirtinimo kodas yra <code>{code}</code>
+
+_NUOŠIRDŽIAI tavo FinFlow._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Šis laiškas buvo sugeneruotas automatiškai į jį atsakyti nereikia")}}
+{% endblock %}
+
+
+

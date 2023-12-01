@@ -1,0 +1,26 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/template_2.html" %}
+
+
+{% block connector %}
+
+{{ image('https://ironwallet.io/wp-content/uploads/mail-logo.png', 'ironWallet', ironWallet, 169, 59, 'mailto:support@iron.wallet.io', center='true')}}
+
+There is a new message with client’s question <br> from the News Iron wallet  [https://ironwallet.io](https://ironwallet.io)
+
+Name:<code>{ClientName}</code>
+
+Email: <code>{ClientEmail}</code>
+
+Question: <code>{Question}</code>
+
+<hr style="border:1px dashed  #000; width:220px; Margin-left:0px ;" >
+
+<span class="footer__connector-text"> Best Regards, <code>{ClientName}</code></span>
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Değerli müşterimiz**
+
+Doğrulama kodunuz <code>{code}</code> şeklindedir.
+
+_Saygılarımla BESTPAY s.r.o._
+
+<br>
+
+{% endblock %}
+
+
+{% block generationText %}
+{{ generationText("Bu e-postanın otomatik olarak yanıtlanması gerekmediği oluşturuldu")}}
+{% endblock %}

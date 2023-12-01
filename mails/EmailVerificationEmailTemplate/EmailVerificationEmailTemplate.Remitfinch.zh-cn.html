@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:cash.inter@yahoo.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **尊敬的客户**
+
+你的核证代码是 <code>{code}</code>
+
+_真诚的你 Remitfinch._
+
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("这封电子邮件是自动生成的，没有必要回复它")}}
+{% endblock %}

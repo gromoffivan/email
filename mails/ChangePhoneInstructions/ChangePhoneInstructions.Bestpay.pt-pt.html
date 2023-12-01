@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### Bom dia! Para alterar o número de telefone da sua conta, você teria que concluir as seguintes etapas:
+
+
+1. Tire uma foto sua segurando o passaporte com o portal [TIME.IS](https://time.is/United_Kingdom) num fundo. As informações do passaporte devem ser claramente visíveis. A fotografia deve ser transmitida como resposta a uma carta actual no prazo de 10 minutos a contar do momento da fotografia. Importante! Todas as credenciais do passaporte devem ser claramente visíveis. A tela de fundo também deve ser visível claramente.
+
+2. Anexe os seus números de telefone anteriores e novos à carta utilizando o formato :+7.
+
+3. Especifique qual foi o seu último País de destino de transferência (se aplicável).
+
+_Obrigado. Cumprimentos_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Este e-mail foi gerado automaticamente não é necessário responder")}}
+{% endblock %}

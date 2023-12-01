@@ -1,0 +1,39 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/template_4.html" %}
+
+
+
+{% block header %}
+<span class="lrs">{{ image('https://london-robotics-school.co.uk./robo_theme/static/img/logo.svg', 'LondonRoboticsSholl', LondonRoboticsSholl, 100, 53, 'mailto:info@london-robotics-school.co.uk', center='true')}}
+</span>{% endblock %}
+{% block content %}
+
+
+
+<hr style="border:1px soilid #000;">
+<code>{Ticket}</code>
+<hr style="border:1px soilid #000;">
+
+Dear <code>{name}</code>
+
+Response to your Ticket - <code>{Ticket}</code>
+
+Hi!</br>
+Thanks.
+
+</br>
+
+
+<hr style="border:1px soilid #322d2d;">
+
+**London Robotics Shool LTD**</br>
+<span class="footer__connector-text"><a class="color-grey-footer" href="tel:+44(0)7415460611">+44(0)7415460611</a> | <a class="color-grey-footer" href="mailto:info@london-robotics-school.co.uk">info@london-robotics-school.co.uk</a> | <a class="color-grey-footer" href="https://london-robotics-school.co.uk./">https://london-robotics-school.co.uk./</a></span>
+
+
+
+
+{% endblock %}

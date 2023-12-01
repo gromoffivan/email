@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:cash.inter@yahoo.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Prezado cliente**
+
+
+O anexo contém informações para receber uma transferência de dinheiro. Recebeu este e-mail porque
+o remetente da transferência de dinheiro indicou o seu endereço de E-mail.
+
+
+#### Esta carta não requer uma resposta.
+
+_Atenciosamente, Remitfinch._
+
+
+<br>
+{% endblock %}

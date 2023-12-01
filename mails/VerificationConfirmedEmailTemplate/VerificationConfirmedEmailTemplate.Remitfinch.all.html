@@ -1,0 +1,65 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Dear customer**
+
+Thank you for choosing to register with us!
+
+Please, find attached the General Terms and Conditions and links for <a href="https://bpay.cz/en-gb/privacy-policy?type=business">Privacy Policy</a>, <a href="https://bpay.cz/en-gb/complaint-procedure?type=business">Complaints Policy</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">Price List</a> and <a href="https://bpay.cz/en-gb/information-sheet?type=business">Information Sheet</a>
+of BESTPAY s.r.o., so you have your own copy of the valid documents.
+
+
+In order to fully verify your account, kindly pass verification and provide your identification document.
+This can either be an ID or passport depending on the evaluation of you, as our client.
+Also, be prepared that you will be prompted to take a selfie of yourself during the process.
+
+
+The first payment for your remittance has to be done and confirmed from your bank account held in bank within EU, to verify its existence.
+
+Once all necessary steps are done, your account should be, as we believe, successfully verified and you can start use it.
+
+
+_Sincerely yours, Remitfinch._
+<hr>
+
+##### **Vážený zákazníku,**
+
+    
+      
+Děkujeme za Vaši volbu a registraci u nás!
+        
+ V příloze najdete kopie dokumentů platných ke dnešnímu dni: Všeobecné podmínky používání služby, a také odkazy na
+<a href="https://bpay.cz/cs-cz/privacy-policy?type=business">Bezpečnostní politiku</a>, <a href="https://bpay.cz/cs-cz/complaint-procedure?type=business">Reklamační řád</a>,
+<a href="https://bpay.cz/cs-cz/price-list?type=business">Ceník</a> a <a href="https://bpay.cz/cs-cz/information-sheet?type=business">Všeobecně informace o společnosti</a> BESTPAY s.r.o.
+        
+Pro dokončení ověření Vašeho účtu Vás žádáme, abyste prošel verifikací a poskytl nám dokument potvrzující Vaši totožnost.
+Pokud ještě nejste registrován, může to být Váš klientský ID nebo občanský průkaz. Také Vás upozorňujeme na nutnost pořízení selfie během procesu ověřování.
+        
+Jakmile dokončíte všechny potřebné kroky, a Váš účet bude, doufejme, úspěšně ověřen, budete moci začít.
+        
+
+
+_S pozdravem, Remitfinch._
+
+
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("This email was generated automatically there is no need to reply to it")}}
+{% endblock %}

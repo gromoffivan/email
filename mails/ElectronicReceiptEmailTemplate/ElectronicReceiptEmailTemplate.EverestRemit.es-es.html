@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://everestremit.pt/online/online/assets/vendors/EVERESTREMIT/mail/header.jpg', 'EVEREST', EVEREST, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Estimado cliente**
+
+
+El archivo adjunto contiene información para recibir una transferencia de dinero. Recibiste este correo electrónico porque
+el remitente de la transferencia de dinero indicó su dirección de correo electrónico.
+
+
+#### Esta carta no requiere respuesta.
+
+_Atentamente, Everestremit._
+
+
+<br>
+{% endblock %}

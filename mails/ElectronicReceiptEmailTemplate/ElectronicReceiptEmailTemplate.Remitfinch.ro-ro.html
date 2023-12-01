@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:cash.inter@yahoo.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Stimate client**
+
+
+Atașamentul conține informații pentru primirea unui transfer de bani. Ați primit acest e-mail deoarece
+expeditorul transferului de bani a indicat adresa dvs. de e-mail.
+
+
+#### Această scrisoare nu necesită un răspuns.
+
+_Cu stimă, Remitfinch._
+
+
+<br>
+{% endblock %}

@@ -1,0 +1,28 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:cash.inter@yahoo.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+#####  **Dear customer**
+
+Your verification code is <code>{code}</code>
+
+_Sincerely yours, Remitfinch._
+
+
+<br>
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("This email was generated automatically there is no need to reply to it")}}
+{% endblock %}

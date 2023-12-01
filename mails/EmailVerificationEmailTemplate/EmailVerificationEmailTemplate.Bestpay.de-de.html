@@ -1,0 +1,30 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+#####  **Sehr geehrter Kunde**
+
+Ihr Bestätigungscode lautet <code>{code}</code>
+
+_Mit freundlichen Grüßen BESTPAY s.r.o._
+
+
+<br>
+
+{% endblock %}
+
+
+{% block generationText %}
+{{ generationText("Diese E-Mail wurde automatisch generiert und muss nicht automatisch beantwortet werden")}}
+{% endblock %}

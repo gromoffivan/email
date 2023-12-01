@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Stimate client**
+
+
+Atașamentul conține informații pentru primirea unui transfer de bani. Ați primit acest e-mail deoarece
+expeditorul transferului de bani a indicat adresa dvs. de e-mail.
+
+
+#### Această scrisoare nu necesită un răspuns.
+
+_Cu stimă, BESTPAY s.r.o._
+
+<br>
+
+{% endblock %}

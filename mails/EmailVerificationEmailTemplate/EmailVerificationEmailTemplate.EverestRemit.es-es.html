@@ -1,0 +1,28 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://everestremit.pt/online/online/assets/vendors/EVERESTREMIT/mail/header.jpg', 'EVEREST', EVEREST, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Estimado cliente**
+
+Su código de verificación es <code>{code}</code>
+
+_sinceramente tuyo Everestremit._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Este correo electrónico se generó automáticamente no es necesario responderlo")}}
+{% endblock %}

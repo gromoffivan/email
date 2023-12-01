@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **亲爱的顾客**
+
+
+附件包含用于接收汇款的信息。 你收到这封邮件是因为
+汇款的发件人表明了你的电子邮件地址.
+
+
+#### 这封信不需要回答。
+
+_真诚的，Winmail._
+
+<br>
+
+{% endblock %}

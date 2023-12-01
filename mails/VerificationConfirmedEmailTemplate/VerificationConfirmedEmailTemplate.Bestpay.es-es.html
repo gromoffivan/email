@@ -1,0 +1,44 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Estimado cliente**
+
+¡Gracias por elegir registrarse con nosotros!
+
+Adjuntamos los Términos y Condiciones Generales y los enlaces para <a href="https://bpay.cz/en-gb/privacy-policy?type=business">Política de Privacidad</a>, 
+<a href="https://bpay.cz/en-gb/complaint-procedure?type=business">Política de Quejas</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">Lista de Precios</a> and <a href="https://bpay.cz/en-gb/information-sheet?type=business">Hoja Informativa</a>
+de BESTPAY s. r.o., para que tenga su propia copia de los documentos válidos.
+
+
+Para verificar completamente su cuenta, pase la verificación y proporcione su documento de identificación.
+Esto puede ser una identificación o pasaporte dependiendo de la evaluación de usted, como nuestro cliente.
+Además, prepárate para que te pidan que te tomes una selfie durante el proceso.
+
+
+El primer pago de su remesa debe realizarse y confirmarse desde su cuenta bancaria en un banco dentro de la UE, para verificar su existencia.
+
+Una vez que se hayan realizado todos los pasos necesarios, su cuenta debe ser, como creemos, verificada con éxito y puede comenzar a usarla.
+
+
+_Atentamente BESTPAY s. r.o._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Este correo electrónico se generó automáticamente no es necesario responderlo")}}
+{% endblock %}

@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### Geros dienos! Norėdami pakeisti paskyros telefono numerį, turėsite atlikti šiuos veiksmus:
+
+
+1. Nufotografuokite save, laikydami pasą su portalu [TIME.IS](https://time.is/United_Kingdom) fone. Paso informacija turėtų būti aiškiai matoma. Paveikslėlis turėtų būti persiųstas kaip atsakymas į dabartinį laišką per 10 minučių nuo fotografavimo momento. Svarbu! Visi paso įgaliojimai turėtų būti aiškiai matomi. Fono ekranas taip pat turėtų būti aiškiai matomas.
+
+2. Pridėkite savo ankstesnius ir naujus telefono numerius prie laiško naudodami formatą: +oma.
+
+3. Nurodykite, kokia buvo jūsų paskutinė paskirties šalis (jei taikoma).
+
+_Ačiū. Geriausi Linkėjimai_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Šis laiškas buvo sugeneruotas automatiškai į jį atsakyti nereikia")}}
+{% endblock %}

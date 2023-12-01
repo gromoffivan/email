@@ -1,0 +1,44 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Stimate client**
+
+Vă mulțumim că ați ales să vă înregistrați la noi!
+
+Vă rugăm, găsiți atașat Termenii și Condițiile generale și link-uri pentru<a href="https://bpay.cz/en-gb/privacy-policy?type=business">Politica De Confidențialitate</a>, 
+<a href="https://bpay.cz/en-gb/complaint-procedure?type=business">Politica De Reclamații</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">Lista De Preturi</a> și <a href="https://bpay.cz/en-gb/information-sheet?type=business">Fișa de informații</a>
+de BESTPAY s.r.o., deci aveți propria copie a documentelor valabile.
+
+
+Pentru a vă verifica complet contul, vă rugăm să treceți verificarea și să furnizați documentul de identificare.
+Acesta poate fi fie un act de identitate, fie un pașaport, în funcție de evaluarea dvs., în calitate de client al nostru.
+De asemenea, fiți pregătiți că vi se va solicita să vă faceți un selfie în timpul procesului.
+
+
+Prima plată pentru remitențele dvs. trebuie efectuată și confirmată din contul dvs. bancar deținut în banca din UE, pentru a verifica existența acesteia.
+
+După ce ați făcut toți pașii necesari, contul dvs. ar trebui să fie, după cum credem, verificat cu succes și puteți începe să îl utilizați.
+
+
+_Cu stimă a ta Remitfinch._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Acest e-mail a fost generat automat nu este nevoie să răspundă la ea")}}
+{% endblock %}

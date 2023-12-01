@@ -1,0 +1,43 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Gentile cliente**
+
+Grazie per aver scelto di registrarti con noi!
+
+Si prega di trovare in allegato i Termini e Condizioni Generali e i link per <a href="https://bpay.cz/en-gb/privacy-policy?type=business">privacy</a>, <a href="https://bpay.cz/en-gb/complaint-procedure?type=business">Complaints Policy</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">Listino Prezzi </a> e<a href="https://bpay.cz/en-gb/information-sheet?type=business">Scheda informativa</a>
+di BESTPAY s. r. o., in modo da avere la propria copia dei documenti validi.
+    
+    
+Per verificare completamente il tuo account, ti preghiamo di passare la verifica e fornire il tuo documento di identificazione.
+Questo può essere un documento d'identità o un passaporto a seconda della valutazione di te, come nostro cliente.
+Inoltre, essere preparati che vi verrà richiesto di prendere un selfie di te stesso durante il processo.
+    
+    
+Il primo pagamento per la tua rimessa deve essere effettuato e confermato dal tuo conto bancario detenuto in banca all'interno dell'UE, per verificarne l'esistenza.
+    
+Una volta completati tutti i passaggi necessari, il tuo account dovrebbe essere, come crediamo, verificato con successo e puoi iniziare a usarlo.
+    
+    
+_Cordiali saluti BESTPAY s. r. o._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Questa email è stata generata automaticamente non è necessario rispondere")}}
+{% endblock %}

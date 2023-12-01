@@ -1,0 +1,43 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Vážený zákazníku,**
+
+    
+      
+Děkujeme za Vaši volbu a registraci u nás!
+        
+ V příloze najdete kopie dokumentů platných ke dnešnímu dni: Všeobecné podmínky používání služby, a také odkazy na
+<a href="https://bpay.cz/cs-cz/privacy-policy?type=business">Bezpečnostní politiku</a>, <a href="https://bpay.cz/cs-cz/complaint-procedure?type=business">Reklamační řád</a>,
+<a href="https://bpay.cz/cs-cz/price-list?type=business">Ceník</a> a <a href="https://bpay.cz/cs-cz/information-sheet?type=business">Všeobecně informace o společnosti</a> BESTPAY s.r.o.
+        
+Pro dokončení ověření Vašeho účtu Vás žádáme, abyste prošel verifikací a poskytl nám dokument potvrzující Vaši totožnost.
+Pokud ještě nejste registrován, může to být Váš klientský ID nebo občanský průkaz. Také Vás upozorňujeme na nutnost pořízení selfie během procesu ověřování.
+        
+Jakmile dokončíte všechny potřebné kroky, a Váš účet bude, doufejme, úspěšně ověřen, budete moci začít.
+        
+
+
+_S pozdravem, FinFlow._
+
+
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Tento e-mail byl vygenerován automaticky na něj nemusíte reagovat")}}
+{% endblock %}

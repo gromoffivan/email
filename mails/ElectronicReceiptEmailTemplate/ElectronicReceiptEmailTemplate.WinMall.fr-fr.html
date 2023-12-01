@@ -1,0 +1,32 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+
+##### **Cher client**
+
+
+La pièce jointe contient des informations pour recevoir un transfert d'argent. Vous avez reçu cet e-mail parce que
+l'expéditeur du transfert d'argent a indiqué votre adresse e-mail.
+
+
+#### Cette lettre ne nécessite pas de réponse.
+
+_Cordialement, WinMall._
+
+
+
+<br>
+
+{% endblock %}

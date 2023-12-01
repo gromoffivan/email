@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### Good day! To change your account phone number, you’d have to complete following steps:
+
+
+1. Take a picture of yourself holding the passport with the portal [TIME.IS](https://time.is/United_Kingdom) on a background. Passport information should be visible clearly. The picture should be forwarded as the response to a current letter within 10 minutes from the moment of shot. IMPORTANT! All passport credentials should be visible clearly. Background screen should be visible clearly as well.
+
+2. Attach your previous and new phone numbers to the letter using format: +хх ххх ххх хххххх.
+
+3. Specify what was your last transfer country of destination (if applicable).
+
+_Thank you. Best Regards_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("This email was generated automatically there is no need to reply to it")}}
+{% endblock %}

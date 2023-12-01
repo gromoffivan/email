@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Gerbiamas kliente**
+
+Jūsų patvirtinimo kodas yra <code>{code}</code>
+
+_NUOŠIRDŽIAI tavo WinMall._
+
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Šis laiškas buvo sugeneruotas automatiškai į jį atsakyti nereikia")}}
+{% endblock %}

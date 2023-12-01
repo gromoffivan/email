@@ -1,0 +1,44 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Hurmatli mijoz**
+
+Biz bilan ro'yxatdan o'tishni tanlaganingiz uchun tashakkur!
+
+Iltimos, umumiy shartlarni va havolalarni toping <a href="https://bpay.cz/en-gb/privacy-policy?type=business">Maxfiylik Siyosati</a>, 
+<a href="https://bpay.cz/en-gb/complaint-procedure?type=business">Shikoyatlar Siyosati</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">Narxlar ro'yxati</a> va <a href="https://bpay.cz/en-gb/information-sheet?type=business">Axborot Varaqasi</a>
+BESTPAY s.r.o., bas, siz amal hujjatlar o'z nusxasini.
+
+
+Hisobingizni to'liq tekshirish uchun tekshiruvdan o'ting va shaxsingizni tasdiqlovchi hujjatni taqdim eting.
+Bu sizning mijozingiz sifatida sizning bahoingizga qarab ID yoki pasport bo'lishi mumkin.
+Bundan tashqari, jarayon davomida sizdan o'zingizni selfi qilish talab qilinishiga tayyor bo'ling.
+
+
+Sizning pul o'tkazmalaringiz uchun birinchi to'lov uning mavjudligini tekshirish uchun EI ichidagi bankda joylashgan bank hisob raqamingizdan amalga oshirilishi va tasdiqlanishi kerak.
+
+Barcha kerakli qadamlar bajarilgandan so'ng, sizning hisobingiz, biz ishonganimizdek, muvaffaqiyatli tekshirilishi kerak va siz undan foydalanishni boshlashingiz mumkin.
+
+
+_Hurmat bilan sizning Remitfinch._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Ushbu elektron pochta avtomatik ravishda yaratilgan unga javob berishning hojati yo'q")}}
+{% endblock %}

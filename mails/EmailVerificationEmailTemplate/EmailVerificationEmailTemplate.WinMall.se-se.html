@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+
+##### **Kära kund**
+
+Din verifieringskod är <code>{code} </code>
+
+_Med vänlig hälsning WinMall._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Acest e-mail a fost generat automat nu este nevoie să răspundă la ea")}}
+{% endblock %}

@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://everestremit.pt/online/online/assets/vendors/EVERESTREMIT/mail/header.jpg', 'EVEREST', EVEREST, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Stimate client**
+
+
+Atașamentul conține informații pentru primirea unui transfer de bani. Ați primit acest e-mail deoarece
+expeditorul transferului de bani a indicat adresa dvs. de e-mail.
+
+
+#### Această scrisoare nu necesită un răspuns.
+
+_Cu stimă, Everestremit._
+
+
+<br>
+{% endblock %}

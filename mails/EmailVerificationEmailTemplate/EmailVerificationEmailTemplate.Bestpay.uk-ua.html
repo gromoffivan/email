@@ -1,0 +1,28 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Шановний клієнт**
+
+Ваш перевірочний код- <code>{code}</code>
+
+_Щиро ваша BESTPAY s. r. o._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Цей лист було згенеровано автоматично відповідати на нього не потрібно")}}
+{% endblock %}

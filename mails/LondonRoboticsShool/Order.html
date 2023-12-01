@@ -1,0 +1,95 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/template_4.html" %}
+
+
+
+{% block header %}
+<span class="lrs">{{ image('https://london-robotics-school.co.uk./robo_theme/static/img/logo.svg', 'LondonRoboticsSholl', LondonRoboticsSholl, 100, 53, 'mailto:info@london-robotics-school.co.uk', center='true')}}
+</span>{% endblock %}
+{% block content %}
+
+
+
+<hr style="border:1px soilid #000;">
+<table border="0"  >
+    <tr style="text-align: center;" >
+        <td style="padding-top: 16px;"><span>{{ button('View Inviice', 'https://go' ) }}</span></td>
+        <td><span style="font-size: 14px; "> <code>{check}</code>  <br/><code>{price}</code> </td>
+    </tr>
+</table>
+<hr style="border:1px soilid #000;">
+
+Hello <code>{name}</code>
+
+Your order **<code>{order}</code>** amounting in **<code>{price}</code>** has been confirmed. <br/>
+Thank you for your trust!
+
+Do not hesitate to contact us if you have any questions.
+
+<table  border="0">
+    <tr  style="border-bottom: 1px solid #000;">
+        <td  style="width: 3%;">Products</td>  
+        <td  style="width: 25%;"></td>
+        <td  style="width: 15%;">Quantity</td>
+        <td  style="width: 15%;"></td>
+        <td  style="width: 15%;">VAT Excl</td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td>Scratch coding</td>
+        <td>0.1</td>
+        <td></td>
+        <td><code>{price}</code></td>
+        
+        
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>SubTotal</td>
+        <td><code>{SubTotal}</code></td>
+        
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Taxes</td>
+        <td><code>{Taxes}</code></td>
+        
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Total</td>
+        <td><code>{Total}</code></td>
+    </tr>
+
+
+    
+    
+</table>
+
+
+<br/>
+
+Bill to: <code>{text}</code></br>
+Payment Method: Demo <code>{price}</code>
+
+<br/>
+<hr style="border:1px soilid #322d2d;">
+
+**London Robotics Shool LTD**</br>
+<span class="footer__connector-text"><a class="color-grey-footer" href="tel:+44(0)7415460611">+44(0)7415460611</a> | <a class="color-grey-footer" href="mailto:info@london-robotics-school.co.uk">info@london-robotics-school.co.uk</a> | <a class="color-grey-footer" href="https://london-robotics-school.co.uk./">https://london-robotics-school.co.uk./</a></span>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "layouts/template_3.html" %}
+
+{% block image %}
+<span style="margin: 0px; position: absolute; right: 0 ; top:0px;" >
+    {{ image('https://london-robotics-school.co.uk./robo_theme/static/img/logo.svg', 'LondonRoboticsSchool', LondonRoboticsSchool, 141, 53, 'mailto:info@london-robotics-school.co.uk', center='true')}}
+</span>
+
+{% endblock %}
+
+{% block generationText %}
+
+
+
+<h2 style="margin: 0px;" ><code>LRS - AdminInfo - New ticket</code></h2>
+
+
+
+{% endblock %}
+
+
+
+
+{% block content %}
+
+</br>
+
+<hr style="border:1px dashed  #000; width:110px; Margin-left:0px ;">
+</br>
+
+A new ticket has benn created with the following details
+
+Ticket name: <t t-out="object.name or ''">Marc Demo</t>
+
+Description: <t t-out="object.description or ''">Marc Demo</t>
+
+Email: <t t-out="object.email or ''">Marc Demo</t>
+
+</br>
+
+<hr style="border:1px dashed  #000; display: block; width:110px; Margin-left:0px ;">
+
+
+
+
+
+{% endblock %}

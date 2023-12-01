@@ -1,0 +1,53 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/template_3.html" %}
+
+{% block image %}
+<span style="margin: 0px; position: absolute; right: 0 ; top:0px;" >
+    {{ image('https://london-robotics-school.co.uk./robo_theme/static/img/logo.svg', 'LondonRoboticsSholl', LondonRoboticsSholl, 141, 53, 'mailto:info@london-robotics-school.co.uk', center='true')}}
+</span>
+
+{% endblock %}
+
+{% block generationText %}  
+
+<p  style="margin: 0px;" ><span style="color: #ABB5BE; font-size: 12px;">Your account</span>
+
+<h2 style="margin: 0px;" ><code>{Your account}</code></h2> 
+</p>
+{% endblock %}  
+
+
+
+
+{% block content %}
+
+<hr style="border:1px dashed  #000; width:110px; Margin-left:0px ;">
+
+</br>
+Dear <code>{ClientName}</code>,
+
+Your have seccessfully registered your child!
+
+Your can see the login on the main page in the Children section.
+
+The password is used as set during the registration of your child.
+
+{{ button('Go to My Child', 'https://go') }}
+
+
+</br>
+
+
+<hr style="border:1px dashed  #000; display: block; width:110px; Margin-left:0px ;">
+
+
+<span class="footer__connector-text"> Have questions? Email us at  <a href="mailto:info@london-robotics-school.co.uk">info@london-robotics-school.co.uk</a></span>
+
+
+
+
+{% endblock %}

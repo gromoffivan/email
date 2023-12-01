@@ -1,0 +1,44 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Sehr geehrter Kunde**
+
+Vielen Dank, dass Sie sich für die Registrierung bei uns entschieden haben!
+
+Im Anhang finden Sie die Allgemeinen Geschäftsbedingungen und Links für <a href="https://bpay.cz/en-gb/privacy-policy?type=business">Datenschutzerklärung</a>, 
+<a href="https://bpay.cz/en-gb/complaint-procedure?type=business">Beschwerdepolitik</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">Preisliste</a> und <a href="https://bpay.cz/en-gb/information-sheet?type=business">Informationsblatt</a>
+von BESTPAY s.r.o., so dass Sie Ihre eigene Kopie der gültigen Dokumente haben.
+
+
+Um Ihr Konto vollständig zu verifizieren, bestehen Sie bitte die Verifizierung und legen Sie Ihr Ausweisdokument vor.
+Dies kann entweder ein Personalausweis oder ein Reisepass sein, abhängig von der Einschätzung von Ihnen als unserem Kunden.
+Seien Sie auch darauf vorbereitet, dass Sie während des Vorgangs aufgefordert werden, ein Selfie von sich selbst zu machen.
+
+
+Die erste Zahlung für Ihre Überweisung muss von Ihrem Bankkonto bei einer Bank innerhalb der EU erfolgen und bestätigt werden, um deren Existenz zu überprüfen.
+
+Sobald alle notwendigen Schritte abgeschlossen sind, sollte Ihr Konto, wie wir glauben, erfolgreich verifiziert sein und Sie können es verwenden.
+
+
+_Mit freundlichen Grüßen BESTPAY s.r.o._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Diese E-Mail wurde automatisch generiert und muss nicht automatisch beantwortet werden")}}
+{% endblock %}

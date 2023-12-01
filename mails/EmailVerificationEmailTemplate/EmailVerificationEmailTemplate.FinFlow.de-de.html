@@ -1,0 +1,32 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+
+{% block content %}
+
+<br>
+
+#####  **Sehr geehrter Kunde**
+
+Ihr Bestätigungscode lautet <code>{code}</code>
+
+_Mit freundlichen Grüßen FinFlow._
+
+
+<br>
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Diese E-Mail wurde automatisch generiert und muss nicht automatisch beantwortet werden")}}
+{% endblock %}
+
+
+

@@ -1,0 +1,45 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **亲爱的顾客**
+
+感谢您选择注册我们！
+
+请参阅附件的一般条款及条件及连结 <a href="https://bpay.cz/en-gb/privacy-policy?type=business">私隐政策</a>,
+ <a href="https://bpay.cz/en-gb/complaint-procedure?type=business">投诉政策</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">价目表</a> 和 <a href="https://bpay.cz/en-gb/information-sheet?type=business">资料单张</a>
+的BESTPAY s.r.o ，所以你有自己的有效文件副本。
+
+
+为了全面验证您的帐户,请通过验证并提供您的身份证明文件.
+这可以是一个身份证或护照取决于你的评估，作为我们的客户。
+此外，请准备好在此过程中，系统会提示您自拍。
+
+
+您的汇款的第一笔付款必须完成，并从您在欧盟银行的银行帐户确认，以验证其存在。
+
+一旦完成所有必要的步骤，您的帐户应该，因为我们相信，成功验证，您可以开始使用它。
+
+
+_真诚的你 BESTPAY s.r.o._
+
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("这封电子邮件是自动生成的，没有必要回复它")}}
+{% endblock %}

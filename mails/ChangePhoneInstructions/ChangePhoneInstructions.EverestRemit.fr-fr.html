@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://everestremit.pt/online/online/assets/vendors/EVERESTREMIT/mail/header.jpg', 'EVEREST', EVEREST, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### Le bonjour! Pour modifier le numéro de téléphone de votre compte, vous devez suivre les étapes suivantes:
+
+
+1. Prenez une photo de vous tenant le passeport avec le portail [TIME.IS](https://time.is/United_Kingdom) sur un fond. Les informations du passeport doivent être clairement visibles. La photo doit être transmise en réponse à une lettre en cours dans les 10 minutes suivant le moment de la prise de vue. IMPORTANT! Toutes les informations d'identification du passeport doivent être clairement visibles. L'écran d'arrière-plan doit également être clairement visible.
+
+2. Joignez vos anciens et nouveaux numéros de téléphone à la lettre en utilisant le format: + ххххххххххххх.
+
+3. Précisez quel était votre dernier pays de destination de transfert (le cas échéant).
+
+_Je vous remercie. Meilleures Salutations_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Cet e-mail a été généré automatiquement pour y répondre n'a pas besoin")}}
+{% endblock %}

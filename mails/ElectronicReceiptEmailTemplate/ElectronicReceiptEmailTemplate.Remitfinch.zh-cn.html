@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:cash.inter@yahoo.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **尊敬的客户**
+
+
+附件包含用于接收汇款的信息。 你收到这封邮件是因为
+汇款的发件人表明了你的电子邮件地址.
+
+
+#### 这封信不需要回答。
+
+_真诚的, Remitfinch._
+
+
+<br>
+{% endblock %}

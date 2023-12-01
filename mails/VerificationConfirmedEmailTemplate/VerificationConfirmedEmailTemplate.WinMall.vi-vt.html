@@ -1,0 +1,44 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Kính gửi khách hàng**
+
+Cảm ơn bạn đã chọn đăng ký với chúng tôi!
+
+Xin vui lòng, tìm đính kèm Các Điều Khoản Và điều kiện Chung và liên kết Cho <a href="https://bpay.cz/en-gb/privacy-policy?type=business">Chính Sách Bảo Mật</a>, 
+<a href="https://bpay.cz/en-gb/complaint-procedure?type=business">Chính Sách Khiếu Nại</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">Bảng giá </a> và <a href="https://bpay.cz/en-gb/information-sheet?type=business">Bảng Thông Tin</a>
+CỦA bestpay s.R.o., vì vậy bạn có bản sao riêng của các tài liệu hợp lệ.
+
+
+Để xác minh đầy đủ tài khoản của bạn, vui lòng vượt qua xác minh và cung cấp tài liệu nhận dạng của bạn.
+Đây có thể LÀ ID hoặc hộ chiếu tùy thuộc vào đánh giá của bạn, với tư cách là khách hàng của chúng tôi.
+Ngoài ra, hãy chuẩn bị rằng bạn sẽ được nhắc chụp ảnh tự sướng của chính mình trong quá trình này.
+
+
+Khoản thanh toán đầu tiên cho chuyển tiền của bạn phải được thực hiện và xác nhận từ tài khoản ngân hàng của bạn được tổ chức tại ngân hàng TRONG EU, để xác minh sự tồn tại của NÓ.
+
+Khi tất cả các bước cần thiết được thực hiện, như chúng tôi tin, tài khoản của bạn sẽ được xác minh thành công và bạn có thể bắt đầu sử dụng nó.
+
+
+_Trân trọng của bạn WinMall._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Email này được tạo tự động không cần phải trả lời nó")}}
+{% endblock %}

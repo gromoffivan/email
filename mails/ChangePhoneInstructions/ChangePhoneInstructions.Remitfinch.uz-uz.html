@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### Xayrli kun! Hisob telefon raqamingizni o'zgartirish uchun quyidagi amallarni bajarishingiz kerak bo'ladi:
+
+
+1. Portal bilan pasportni ushlab turganingizni suratga oling [TIME.IS](https://time.is/United_Kingdom) fonda. Pasport ma'lumotlari aniq ko'rinishi kerak. Rasm otilgan paytdan boshlab 10 daqiqa ichida joriy xatga javob sifatida yo'naltirilishi kerak. Muhim! Barcha pasport ma'lumotlari aniq ko'rinishi kerak. Fon ekrani ham aniq ko'rinishi kerak.
+
+2. Format yordamida oldingi va yangi telefon raqamlaringizni xatga ilova qiling:+.
+
+3. Belgilangan oxirgi transfer mamlakatingiz nima bo'lganini ko'rsating (agar mavjud bo'lsa).
+
+_Rahmat. Eng Yaxshi Tilaklar_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Ushbu elektron pochta avtomatik ravishda yaratilgan unga javob berishning hojati yo'q")}}
+{% endblock %}

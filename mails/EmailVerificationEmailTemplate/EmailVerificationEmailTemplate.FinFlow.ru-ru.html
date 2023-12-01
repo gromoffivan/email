@@ -1,0 +1,30 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Уважаемый клиент**
+
+Ваш проверочный код - <code>{code}</code>
+
+_Искренне ваша FinFlow._
+
+<br>
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Это письмо было сгенерировано автоматически отвечать на него не нужно")}}
+{% endblock %}
+
+
+

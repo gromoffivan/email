@@ -1,0 +1,45 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Prezado cliente**
+
+Obrigado por escolher registar-se connosco!
+
+Por favor, encontre em anexo os Termos e Condições Gerais e os links para <a href="https://bpay.cz/en-gb/privacy-policy?type=business">Política De Privacidade</a>, 
+<a href="https://bpay.cz/en-gb/complaint-procedure?type=business">Política De Reclamações</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">Lista de preços </a> e<a href="https://bpay.cz/en-gb/information-sheet?type=business">ficha de informação</a>
+de BESTPAY s. r. o., Para que você tenha sua própria cópia dos documentos válidos.
+    
+    
+A fim de verificar completamente a sua conta, gentilmente passar a verificação e fornecer o seu documento de identificação.
+Pode ser um documento de identificação ou passaporte, dependendo da sua avaliação, como nosso cliente.
+Além disso, esteja preparado para que você seja solicitado a tirar uma selfie durante o processo.
+    
+    
+O primeiro pagamento da sua remessa tem de ser feito e confirmado a partir da sua conta bancária detida em banco na UE, para verificar a sua existência.
+    
+Uma vez concluídas todas as etapas necessárias, sua conta deve ser, como acreditamos, verificada com sucesso e você pode começar a usá-la.
+    
+    
+_Atenciosamente WinMall._
+
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Este e-mail foi gerado automaticamente não é necessário responder")}}
+{% endblock %}

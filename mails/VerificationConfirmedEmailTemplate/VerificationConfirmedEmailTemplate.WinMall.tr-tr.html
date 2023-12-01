@@ -1,0 +1,44 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Değerli müşterimiz**
+
+Bize kaydolmayı seçtiğiniz için teşekkür ederiz!
+
+Lütfen ekteki Genel Hüküm ve Koşulları ve aşağıdaki linkleri bulun: <a href="https://bpay.cz/en-gb/privacy-policy?type=business">gizlilik politikası</a>, 
+<a href="https://bpay.cz/en-gb/complaint-procedure?type=business">Şikayet Politikası</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">Fiyat Listesi</a> ve <a href="https://bpay.cz/en-gb/information-sheet?type=business">Bilgi Formu</a>
+BESTPAY s.r.o., böylece geçerli belgelerin kendi kopyanız olur.
+
+
+Hesabınızı tam olarak doğrulamak için lütfen doğrulamayı geçin ve kimlik belgenizi sağlayın.
+Bu, müşterimiz olarak sizin değerlendirmenize bağlı olarak bir kimlik veya pasaport olabilir.
+Ayrıca, işlem sırasında kendinizden bir selfie çekmeniz isteneceğine hazırlıklı olun.
+
+
+Havale işleminizin ilk ödemesinin, varlığını doğrulamak için AB içinde banka'da tutulan banka hesabınızdan yapılması ve onaylanması gerekir.
+
+Gerekli tüm adımlar tamamlandıktan sonra, hesabınız, inandığımız gibi başarıyla doğrulanmalı ve kullanmaya başlayabilirsiniz.
+
+
+_Saygılarımla WinMall._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Bu e-postanın otomatik olarak yanıtlanması gerekmediği oluşturuldu")}}
+{% endblock %}

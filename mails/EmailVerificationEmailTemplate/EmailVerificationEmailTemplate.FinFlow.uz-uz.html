@@ -1,0 +1,31 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+
+{% block content %}
+
+<br>
+
+##### **Hurmatli mijoz**
+
+Sizning tasdiqlash kodingiz <code>{code}</code>
+
+_Hurmat bilan sizning FinFlow._
+
+<br>
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Ushbu elektron pochta avtomatik ravishda yaratilgan unga javob berishning hojati yo'q")}}
+{% endblock %}
+
+
+

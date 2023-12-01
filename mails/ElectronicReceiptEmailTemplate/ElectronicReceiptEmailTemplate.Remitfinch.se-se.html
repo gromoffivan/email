@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:cash.inter@yahoo.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Kära kund**
+
+
+Bilagan innehåller information för att ta emot en penningöverföring. Du fick det här e-postmeddelandet eftersom
+avsändaren av pengaröverföringen angav din e-postadress.
+
+
+#### Detta brev kräver inget svar.
+
+_Med vänliga hälsningar, Remitfinch._
+
+
+<br>
+{% endblock %}

@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### Guten Tag! Um die Telefonnummer Ihres Kontos zu ändern, müssen Sie die folgenden Schritte ausführen:
+
+
+1. Machen Sie ein Foto von sich selbst, wie Sie den Reisepass mit dem Portal halten [TIME.IS ](https://time.is/United_Kingdom ) auf einem Hintergrund. Passinformationen sollten deutlich sichtbar sein. Das Bild sollte als Antwort auf einen aktuellen Brief innerhalb von 10 Minuten ab dem Moment der Aufnahme weitergeleitet werden. WICHTIG! Alle Passdaten sollten deutlich sichtbar sein. Der Hintergrundbildschirm sollte ebenfalls deutlich sichtbar sein.
+
+2. Fügen Sie dem Brief Ihre vorherige und neue Telefonnummer im folgenden Format bei: +фххххххххх.
+
+3. Geben Sie an, in welchem Zielland Sie zuletzt transferiert haben (falls zutreffend).
+
+_Danke. Mit freundlichen Grüßen_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Diese E-Mail wurde automatisch generiert und muss nicht automatisch beantwortet werden")}}
+{% endblock %}

@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### Bună ziua! Pentru a schimba numărul de telefon al contului, va trebui să parcurgeți următorii pași:
+
+
+1. Faceți o fotografie cu dvs. ținând pașaportul cu portalul [TIME.IS](https://time.is/United_Kingdom) pe un fundal. Informațiile despre pașaport trebuie să fie vizibile în mod clar. Imaginea trebuie transmisă ca răspuns la o scrisoare curentă în termen de 10 minute de la momentul fotografierii. IMPORTANT! Toate acreditările pașaportului trebuie să fie vizibile clar. Ecranul de fundal ar trebui să fie vizibil în mod clar, de asemenea.
+
+2. Atașați numerele dvs. de telefon anterioare și noi la literă folosind formatul: + Euro.
+
+3. Specificați care a fost ultima țară de destinație de transfer (dacă este cazul).
+
+_Mulțumesc. Cele Mai Bune Salutări_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Acest e-mail a fost generat automat nu este nevoie să răspundă la ea")}}
+{% endblock %}

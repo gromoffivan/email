@@ -1,0 +1,28 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://bpay.cz/online/assets/vendors/BESTPAY/mail/header.jpg', 'BESTPAY', BESTPAY, width, height, 'mailto:info@bpay.cz', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Vážený zákazníku,**
+Tato příloha obsahuje informace potřebné k přijetí převodu peněz. Získal jste tento e-mail, protože odesílatel uvedl  Vaši emailovou adresu. 
+
+Na tento e-mail nemusíte odpovídat.
+
+_S pozdravem, BESTPAY s.r.o._
+
+
+<br>
+
+
+{% endblock %}
+

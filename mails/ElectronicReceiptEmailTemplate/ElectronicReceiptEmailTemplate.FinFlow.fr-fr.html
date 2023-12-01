@@ -1,0 +1,33 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Cher client**
+
+
+La pièce jointe contient des informations pour recevoir un transfert d'argent. Vous avez reçu cet e-mail parce que
+l'expéditeur du transfert d'argent a indiqué votre adresse e-mail.
+
+
+#### Cette lettre ne nécessite pas de réponse.
+
+_Cordialement, FinFlow._
+
+<br>
+
+{% endblock %}
+
+
+
+

@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### Goddag! För att ändra ditt kontonummer måste du slutföra följande steg:
+
+
+1. Ta en bild av dig själv som håller passet med portalen [TIME.IS](https://time.is/United_Kingdom) på en bakgrund. Passinformation ska vara tydligt synlig. Bilden ska vidarebefordras som svar på ett aktuellt brev inom 10 minuter från skottögonblicket. Viktigt! Alla passuppgifter ska vara synliga tydligt. Bakgrundsskärmen ska också vara synlig tydligt.
+
+2. Bifoga dina tidigare och nya telefonnummer till brevet med format: + xnumx.
+
+3. Ange vad som var ditt senaste destinationsland (om tillämpligt).
+
+_Tack. Med Vänliga Hälsningar_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Acest e-mail a fost generat automat nu este nevoie să răspundă la ea")}}
+{% endblock %}

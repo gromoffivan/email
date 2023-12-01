@@ -1,0 +1,30 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://everestremit.pt/online/online/assets/vendors/EVERESTREMIT/mail/header.jpg', 'EVEREST', EVEREST, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Sehr geehrter Kunde**
+
+
+Der Anhang enthält Informationen zum Empfang einer Überweisung. Sie haben diese E-Mail erhalten, weil
+in der Mitte der Überweisung wurde Ihre E-Mail-Adresse angegeben.
+
+
+#### Dieser Brief erfordert keine Antwort.
+
+_Mit freundlichen Grüßen, Everestremit._
+
+
+<br>
+
+{% endblock %}

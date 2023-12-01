@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://ff-online.ffsw.dev/online/assets/vendors/FINFLOW/mail/header.jpg', 'Finflow', Finflow, width, height, 'mailto:info@finflowsoft.com', center='true')}}
+{% endblock %}
+
+
+{% block content %}
+
+<br>
+
+##### **Уважаемый клиент**
+
+
+В приложении содержится информация для получения денежного перевода. Вы получили это письмо, потому что
+отправитель денежного перевода указал ваш адрес электронной почты.
+
+
+#### Это письмо не требует ответа .
+
+_С уважением, FinFlow._
+
+<br>
+
+{% endblock %}
+
+
+
+

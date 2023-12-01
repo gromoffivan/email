@@ -1,0 +1,34 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### Dzień dobry! Aby zmienić numer telefonu konta, musisz wykonać następujące czynności:
+
+
+1. Zrób sobie zdjęcie z paszportem za pomocą portalu [TIME.IS](https://time.is/United_Kingdom) na tle. Informacje paszportowe powinny być wyraźnie widoczne. Zdjęcie powinno zostać przesłane jako odpowiedź na aktualny list w ciągu 10 minut od momentu strzału. Ważne! Wszystkie poświadczenia paszportowe powinny być wyraźnie widoczne. Ekran tła również powinien być wyraźnie widoczny.
+
+2. Do listu należy dołączyć poprzedni i nowy numer telefonu w formacie: + хх хх хх хх хх хххх.
+
+3. Określ, jaki był twój ostatni kraj docelowy transferu (jeśli dotyczy).
+
+_Dziękuję. Pozdrawiam_
+
+<br>
+
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Ten e-mail został wygenerowany automatycznie nie trzeba na niego odpowiadać")}}
+{% endblock %}

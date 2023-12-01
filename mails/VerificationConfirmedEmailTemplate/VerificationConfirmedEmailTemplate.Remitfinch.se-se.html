@@ -1,0 +1,44 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Kära kund**
+
+Tack för att du väljer att registrera dig hos oss!
+
+Vänligen hitta bifogade Allmänna Villkor och länkar för <a href="https://bpay.cz/en-gb/privacy-policy?type=business">sekretesspolicy</a>,
+ <a href="https://bpay.cz/en-gb/complaint-procedure?type=business">Policy För Klagomål</a>,
+<a href="https://bpay.cz/en-gb/price-list?type=business">Prislista</a> och <a href="https://bpay.cz/en-gb/information-sheet?type=business">Informationsblad</a>
+BESTPAY s.r. o., så du har din egen kopia av de giltiga dokumenten.
+    
+    
+För att fullständigt verifiera ditt konto, Vänligen skicka verifiering och tillhandahålla ditt identitetsdokument.
+Detta kan antingen vara ett ID eller pass beroende på utvärderingen av dig som vår kund.
+Var också beredd på att du kommer att uppmanas att ta en selfie av dig själv under processen.
+    
+    
+Den första betalningen för din överföring måste göras och bekräftas från ditt bankkonto i bank inom EU för att verifiera dess existens.
+    
+När alla nödvändiga steg har gjorts bör ditt konto, som vi tror, verifieras framgångsrikt och du kan börja använda det.
+    
+    
+_Med vänlig hälsning Remitfinch._
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Acest e-mail a fost generat automat nu este nevoie să răspundă la ea")}}
+{% endblock %}

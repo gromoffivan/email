@@ -1,0 +1,21 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/template_2.html" %}
+
+
+{% block connector %}
+
+{{ image('https://connector.solutions/Themes/Orchard.ConnectorSolutions/Content/mail/logo.png', 'ConnectorSolution', ConnectorSolution, 138, 30, 'mailto:support@connector.solutions', center='true')}}
+
+**<h2>Verify your email</h2>** 
+
+Hello, <code>{name}</code>
+
+If you did not initiate this process or if you believe this message has reached you in error, please feel free to disregard this email. 
+
+<span class="footer__connector-text">Have questions? Email us at <a href="mailto:support@connector.solutions">support@connector.solutions</a> </span> 
+
+{% endblock %}

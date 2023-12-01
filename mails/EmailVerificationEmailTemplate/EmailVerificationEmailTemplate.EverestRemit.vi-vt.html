@@ -1,0 +1,27 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://everestremit.pt/online/online/assets/vendors/EVERESTREMIT/mail/header.jpg', 'EVEREST', EVEREST, width, height, 'mailto:info@everestremit.pt', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Kính gửi khách hàng**
+
+Mã xác minh của bạn là <code >{code}</code>
+
+_Trân trọng của bạn Everestremit._
+
+<br>
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Email này được tạo tự động không cần phải trả lời nó")}}
+{% endblock %}

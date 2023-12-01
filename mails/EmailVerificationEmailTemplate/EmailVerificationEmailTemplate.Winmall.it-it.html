@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://winmall-remit.it/online/assets/vendors/WINMALL/mail/header.jpg', 'WinMall', WinMall, width, height, 'mailto:support@winmall-remit.it', center='true')}}
+{% endblock %}
+
+{% block content %}
+
+<br>
+
+##### **Gentile cliente**
+
+Il tuo codice di verifica è <code> {code}</code>
+
+_Cordiali saluti, WinMall._
+
+
+<br>
+
+{% endblock %}
+
+{% block generationText %}
+{{ generationText("Questa email è stata generata automaticamente non è necessario rispondere")}}
+{% endblock %}

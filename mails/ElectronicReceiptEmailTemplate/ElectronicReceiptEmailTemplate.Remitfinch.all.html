@@ -1,0 +1,41 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/default.html" %}
+
+{% block header %}
+{{ header('https://remitfinch.com/online/assets/vendors/REMITFINCH/mail/header.jpg', 'REMINTFINCH', REMINTFINCH, width, height, 'mailto:cash.inter@yahoo.com', center='true')}}
+{% endblock %}
+
+
+{% block content %}
+
+<br>
+
+##### **Dear customer**
+
+
+The attachment contains information for receiving a money transfer. You received this email because
+the sender of the money transfer indicated your email address.
+
+
+#### This letter does not require an answer.
+
+_Sincerely yours, Remitfinch._
+<hr>
+
+##### **Vážený zákazníku,**
+
+Tato příloha obsahuje informace potřebné k přijetí převodu peněz. Získal jste tento e-mail, protože odesílatel uvedl  Vaši emailovou adresu. 
+
+Na tento e-mail nemusíte odpovídat.
+
+_S pozdravem, Remitfinch._
+
+
+
+<br>
+
+{% endblock %}

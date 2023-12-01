@@ -1,0 +1,29 @@
+---
+subject:   ''
+preheader: ''
+---
+
+{% extends "layouts/template_2.html" %}
+
+
+{% block connector %}
+
+{{ image('https://ironwallet.io/wp-content/uploads/mail-logo.png', 'ironWallet', ironWallet, 169, 59, 'mailto:support@iron.wallet.io', center='true')}}
+
+
+Hello<code>{ClientName}</code>
+
+
+<code>{Description}</code>
+
+<br>
+
+<hr style="border:1px dashed  #000; width:100px; Margin-left:0px ;" >
+
+<br>
+
+<span class="footer__connector-text"> Best Regards, Support<code>{SupportName}</code></span>
+
+
+<span class="footer__connector-text">Have questions? Email us at <a href="mailto:support@iron.wallet.io">support@iron.wallet.io</a></span> 
+{% endblock %}
