@@ -24,21 +24,12 @@ jobs:
       - name: build
         run: npm run build #команда сборки
       
-      - uses: actions/checkout@v3
-      - run: mkdir -p public_html #команда создания директории в корне
-      
       - name: Save artifact
         uses: actions/upload-artifact@v3
         with:
           name: build-output
-          path: public_html/  #команда сохранения в созданую директорию
-
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+          path: dist  #команда сохранения в созданую директорию
+      - run: zip -r dist.zip dist/
+      - uses: ncipollo/release-action@v1
         with:
-          commit_message: Automated Change
-          branch: build #ветка для комита
-          commit_options: '--no-verify --signoff'
-          commit_author: Author <actions@github.com> 
-          status_options: '--untracked-files=no'
-          skip_dirty_check: true
+          artifacts: "dist.zip"
