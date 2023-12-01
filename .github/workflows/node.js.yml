@@ -3,7 +3,7 @@ name: build_nodejs
 on:
   push:
     branches:
-      - build #ветка для пуша
+      - main #ветка для пуша
 
 jobs:
   build:
@@ -32,3 +32,13 @@ jobs:
         with:
           name: build-output
           path: public_html/  #команда сохранения в созданую директорию
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Automated Change
+          branch: build #ветка для комита
+          commit_options: '--no-verify --signoff'
+          commit_author: Author <actions@github.com> 
+          status_options: '--untracked-files=no'
+          skip_dirty_check: true
