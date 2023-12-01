@@ -6,7 +6,7 @@ on:
     branches:
       - main #ветка для пуша
     tags:
-    - '*'
+      - '*'
 
 jobs:
   build:
