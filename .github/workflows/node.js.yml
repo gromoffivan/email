@@ -3,7 +3,7 @@ name: build_node_v16
 on:
   push:
     branches:
-      - build
+      - build #ветка для пуша
 
 jobs:
   build:
@@ -16,16 +16,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '16' #версия ноды
 
       - name: install_dependencies
-        run: npm install
-
+        run: npm install #установка пакетов
+      
       - name: build
-        run: npm run build
-
+        run: npm run build #команда сборки
+      
+      - uses: actions/checkout@v3
+      - run: mkdir -p public_html #команда создания директории в корне
+      
       - name: Save artifact
         uses: actions/upload-artifact@v3
         with:
           name: build-output
-          path: public_html
+          path: public_html/  #команда сохранения в созданую директорию
