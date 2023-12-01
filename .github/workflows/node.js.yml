@@ -3,7 +3,7 @@ name: build_nodejs
 on:
   push:
     tags:
-      - '*'
+      - '*' 
 
 jobs:
   build:
